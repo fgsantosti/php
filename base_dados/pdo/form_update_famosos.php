@@ -4,7 +4,7 @@
 	$id = $_GET["id"];
 	$famosos = new stdClass;
 
-		//executa uma instrução SQL de update
+	//executa uma instrução SQL de seleção
 	$result = $conn -> query("SELECT * FROM famosos WHERE idFamosos = '{$id}'");
 	if ($result){
 		$row = $result->fetch();
